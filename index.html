@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="styles.css"/>
+    
+</head>
+
+<body>
+    <div class="responsive">
+        <div class="image-container">
+            <div class="container">
+                <img id="display" src="https://cdn.shopify.com/s/files/1/0564/3685/0790/files/laura-chouette-6Y2XstWtDvM-unsplash.jpg?v=1701946731" />
+            </div>
+            <div>
+                <img id="image1" class="image" src="https://cdn.shopify.com/s/files/1/0564/3685/0790/files/laura-chouette-6Y2XstWtDvM-unsplash.jpg?v=1701946731" onclick="selectImg()" />
+                <img id="image2" class="image" src="https://cdn.shopify.com/s/files/1/0564/3685/0790/files/laura-chouette-HVlOLCHlzJs-unsplash.jpg?v=1701946732" onclick="selectImg1()" />
+                <img id="image3" class="image" src="https://cdn.shopify.com/s/files/1/0564/3685/0790/files/laura-chouette-om8qxMDlGfI-unsplash.jpg?v=1701946732" onclick="selectImg2()" />
+                <img id="image4" class="image" src="https://cdn.shopify.com/s/files/1/0564/3685/0790/files/laura-chouette-WQgvRkmqRrg-unsplash.jpg?v=1701946731" onclick="selectImg3()" />
+            </div>
+        </div>
+        <div class="description-container">
+            <p>Marmeto</p>
+            <h1 class="product-name">Embrance Sideboard</h1>
+            <hr />
+            <div class="price-container">
+                <span class="price-color">$12999.00</span>
+                <span class="discount-color">35% Off</span>
+            </div>
+            <p class="actual-price-color">$19999.00</p>
+            <h1>Choose Color</h1>
+            <div id="colorPalette">
+                <div class="color-option" style="background-color:#ECDECC" onclick="selectColor('yellow')"></div>
+                <div class="color-option" style="background-color:#BBD278" onclick="selectColor('green')"></div>
+                <div class="color-option" style="background-color: #BBC1F8;" onclick="selectColor('blue')"></div>
+                <div class="color-option" style="background-color: #ffd3f8;" onclick="selectColor('pink')"></div>
+            </div>
+            <hr />
+            <h1>Choose a Size</h1>
+            <div class="choose-size">
+                <div class="radio-style">
+                    <input type="radio" id="small" name="size" value="small" />
+                    <label for="small">Small</label>
+                </div>
+                <div class="radio-style">
+                    <input type="radio" id="medium" name="size" value="Medium" />
+                    <label for="medium">Medium</label>
+                </div>
+                <div class="radio-style">
+                    <input type="radio" id="large" name="size" value="Large" />
+                    <label for="large">Large</label>
+                </div>
+                <div class="radio-style">
+                    <input type="radio" id="Extralarge" name="size" value="Extra-large" />
+                    <label for="Extralarge">Extra Large</label>
+                </div>
+                <div class="radio-style">
+                    <input type="radio" id="XXL" name="size" value="XXL" />
+                    <label for="XXL">XXL</label>
+                </div>
+            </div>
+            <div class="button-cart">
+                <div class="buttons-container">
+                    <button class="button" id="decrementButton" onclick="decrementButton()">-</button>
+                    <span id="number">0</span>
+                    <button class="button" id="incrementButton" onclick="incrementButton()">+</button>
+                </div>
+                <div class="cart-container" onclick="addToCart()">
+                    <div class="cart-container-inner">
+                        <span class="material-symbols-outlined">
+                            shopping_bag
+                        </span>
+                        <span class="cart-container-inner1">
+                            Add To Cart
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <p id="message"></p>
+            <hr />
+            <p>
+                The Embrace Sideboard is a stylish wear. With a top cloth designed to provide superior protection and look great, this storage solution is both functional and attractive. It fits seamlessly into any home decor, with clean lines and a timeless look. Crafted from premium materials for a combination of style, durability, and reliability"
+            </p>
+        </div>
+    </div>
+<!-- <script src="marmeto.js"></script> -->
+<script type="text/javascript" src="script.js"></script>
+
+
+</body>
+
+</html>
